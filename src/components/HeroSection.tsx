@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Leaf } from "lucide-react";
 import { motion } from "framer-motion";
+import freshkeepProduct from "@/assets/freshkeep-product.png";
 
 export function HeroSection() {
   const scrollToFeedback = () => {
