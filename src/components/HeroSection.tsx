@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Leaf } from "lucide-react";
 import { motion } from "framer-motion";
+import freshkeepProduct from "@/assets/freshkeep-product.png";
 
 export function HeroSection() {
   const scrollToFeedback = () => {
@@ -57,11 +58,8 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-square max-w-md mx-auto rounded-3xl bg-gradient-to-br from-primary/10 via-secondary to-accent/10 border border-border flex items-center justify-center">
-              <div className="text-center p-8">
-                <Leaf className="h-20 w-20 text-primary mx-auto mb-4 opacity-60" />
-                <p className="text-muted-foreground text-sm font-medium">Product Image Coming Soon</p>
-              </div>
+            <div className="aspect-auto max-w-md mx-auto rounded-3xl overflow-hidden">
+              <img src={freshkeepProduct} alt="FreshKeep Product Overview showing ventilation control, elevated airflow tray, moisture control layer, and ethylene absorber compartment" className="w-full h-full object-contain" />
             </div>
           </motion.div>
         </div>
